@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.App.UWP", "ToDo.App\ToDo.App.UWP\ToDo.App.UWP.csproj", "{F7B87780-FBD9-4871-B394-B3E9651A4228}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.App.Android", "ToDo.App\ToDo.App.Android\ToDo.App.Android.csproj", "{F2629432-1DD2-4457-8E37-4DC7963C45EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.App.iOS", "ToDo.App\ToDo.App.iOS\ToDo.App.iOS.csproj", "{7AD31D00-4DF3-4218-9C5B-EC603021E09C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.App", "ToDo.App\ToDo.App\ToDo.App.csproj", "{B914A964-9424-4FEB-9161-76D722A28A3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.App", "ToDo.App\ToDo.App\ToDo.App.csproj", "{B914A964-9424-4FEB-9161-76D722A28A3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,42 +25,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|Any CPU.Build.0 = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|Any CPU.Deploy.0 = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|ARM.ActiveCfg = Debug|ARM
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|ARM.Build.0 = Debug|ARM
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|ARM.Deploy.0 = Debug|ARM
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|iPhone.ActiveCfg = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|iPhone.Build.0 = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|iPhone.Deploy.0 = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|iPhoneSimulator.Build.0 = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|iPhoneSimulator.Deploy.0 = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|x64.ActiveCfg = Debug|x64
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|x64.Build.0 = Debug|x64
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|x64.Deploy.0 = Debug|x64
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|x86.ActiveCfg = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|x86.Build.0 = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Debug|x86.Deploy.0 = Debug|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|Any CPU.ActiveCfg = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|Any CPU.Build.0 = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|Any CPU.Deploy.0 = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|ARM.ActiveCfg = Release|ARM
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|ARM.Build.0 = Release|ARM
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|ARM.Deploy.0 = Release|ARM
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|iPhone.ActiveCfg = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|iPhone.Build.0 = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|iPhone.Deploy.0 = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|iPhoneSimulator.ActiveCfg = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|iPhoneSimulator.Build.0 = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|iPhoneSimulator.Deploy.0 = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|x64.ActiveCfg = Release|x64
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|x64.Build.0 = Release|x64
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|x64.Deploy.0 = Release|x64
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|x86.ActiveCfg = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|x86.Build.0 = Release|x86
-		{F7B87780-FBD9-4871-B394-B3E9651A4228}.Release|x86.Deploy.0 = Release|x86
 		{F2629432-1DD2-4457-8E37-4DC7963C45EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2629432-1DD2-4457-8E37-4DC7963C45EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2629432-1DD2-4457-8E37-4DC7963C45EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU

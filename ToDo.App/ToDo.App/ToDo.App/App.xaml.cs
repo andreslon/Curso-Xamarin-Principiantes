@@ -1,4 +1,5 @@
 ﻿using System;
+using ToDo.App.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace ToDo.App
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MasterPage();
         }
 
         protected override void OnStart()

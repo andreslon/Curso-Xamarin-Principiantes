@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ToDo.App.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ListPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public ListPage()
+        public HomePage()
         {
             InitializeComponent();
         }

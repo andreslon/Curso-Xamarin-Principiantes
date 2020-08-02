@@ -11,7 +11,7 @@ namespace ToDo.App
         {
             InitializeComponent();
 
-            MainPage = new MasterPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()

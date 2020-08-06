@@ -6,11 +6,19 @@
              mc:Ignorable="d"
              Title="Agregar Tarea"
              x:Class="ToDo.App.Views.AddPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="BtnGuardar" Text="Guardar"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Formulario para agregar tarea"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="15">
+            <Label Text="Nombre *" TextColor="#e74c3c" FontSize="Medium"></Label>
+            <Entry x:Name="nombre"></Entry>
+            <Label Text="Descripción" TextColor="#e74c3c" FontSize="Medium"></Label>
+            <Editor x:Name="descripcion" HeightRequest="120"></Editor>
+            <Label Text="Fecha" TextColor="#e74c3c" FontSize="Medium"></Label>
+            <DatePicker x:Name="fecha"></DatePicker>
+            <Label Text="Hora" TextColor="#e74c3c" FontSize="Medium"></Label>
+            <TimePicker x:Name="hora"></TimePicker>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

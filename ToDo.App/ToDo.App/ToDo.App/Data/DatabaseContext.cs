@@ -17,6 +17,10 @@ namespace ToDo.App.Data
 
             connection.CreateTableAsync<ToDoItem>().Wait();
         }
+        public async Task<int> InsertItemAsync(ToDoItem item)
+        {
+            return await connection.InsertAsync(item);
+        }
 
     }
 }

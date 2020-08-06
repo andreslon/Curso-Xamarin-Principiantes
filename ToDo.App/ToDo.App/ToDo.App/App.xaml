@@ -6,6 +6,10 @@
              mc:Ignorable="d"
              x:Class="ToDo.App.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Color x:Key="colorPrimary">#e74c3c</Color>
+            <Color x:Key="colorPrimaryDark">#c0392b</Color>
+            <Color x:Key="colorAccent">#34495e</Color>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

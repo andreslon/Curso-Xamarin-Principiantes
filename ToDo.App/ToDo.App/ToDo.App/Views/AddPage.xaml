@@ -11,13 +11,13 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Padding="15">
-            <Label Text="Nombre *" TextColor="#e74c3c" FontSize="Medium"></Label>
+            <Label Text="Nombre *" TextColor="{StaticResource colorPrimary}" FontSize="Medium"></Label>
             <Entry x:Name="nombre"></Entry>
-            <Label Text="Descripción" TextColor="#e74c3c" FontSize="Medium"></Label>
+            <Label Text="Descripción" TextColor="{StaticResource colorPrimary}" FontSize="Medium"></Label>
             <Editor x:Name="descripcion" HeightRequest="120"></Editor>
-            <Label Text="Fecha" TextColor="#e74c3c" FontSize="Medium"></Label>
+            <Label Text="Fecha" TextColor="{StaticResource colorPrimary}" FontSize="Medium"></Label>
             <DatePicker x:Name="fecha"></DatePicker>
-            <Label Text="Hora" TextColor="#e74c3c" FontSize="Medium"></Label>
+            <Label Text="Hora" TextColor="{StaticResource colorPrimary}" FontSize="Medium"></Label>
             <TimePicker x:Name="hora"></TimePicker>
         </StackLayout>
     </ContentPage.Content>

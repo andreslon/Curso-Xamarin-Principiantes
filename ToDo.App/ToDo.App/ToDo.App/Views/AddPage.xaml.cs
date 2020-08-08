@@ -24,9 +24,7 @@ namespace ToDo.App.Views
                 var item = new ToDoItem
                 {
                     Name = nombre.Text,
-                    Description = descripcion.Text,
-                    Date = fecha.Date,
-                    Time = hora.Time
+                    Description = descripcion.Text
                 };
                 var result = await App.Context.InsertItemAsync(item);
                 if (result == 1)

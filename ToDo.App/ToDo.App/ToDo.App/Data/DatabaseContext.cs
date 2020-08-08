@@ -21,6 +21,9 @@ namespace ToDo.App.Data
         {
             return await connection.InsertAsync(item);
         }
-
+        public async Task<List<ToDoItem>> GetItemsAsync()
+        {
+            return await connection.Table<ToDoItem>().ToListAsync();
+        }
     }
 }

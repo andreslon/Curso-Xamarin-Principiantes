@@ -10,10 +10,17 @@
         <ToolbarItem  Text="Agregar" Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Lista de tareas"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ListView x:Name="lista_tareas" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="15,0">
+                            <Label Text="{Binding Name}" FontSize="Medium" TextColor="{StaticResource colorPrimary}"/>
+                            <Label Text="{Binding Description}" />
+                        </StackLayout>
+                    </ViewCell> 
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

@@ -16,10 +16,21 @@ namespace ToDo.App.Views
         {
             InitializeComponent();
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            LoadItems();
+        }
+        private async void LoadItems()
+        {
+            var items = await App.Context.GetItemsAsync();
+            lista_tareas.ItemsSource = items;
+        }
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AddPage());
         }
+         
     }
 }

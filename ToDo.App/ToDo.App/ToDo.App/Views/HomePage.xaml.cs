@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ToDo.App.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -31,6 +31,18 @@ namespace ToDo.App.Views
         {
             await Navigation.PushAsync(new AddPage());
         }
-         
+
+        private async void BtnDelete_Clicked(object sender, EventArgs e)
+        {
+            if (await DisplayAlert("Confirmación", "¿Está seguro de eliminar la tarea?", "Si", "No"))
+            {
+                var item = (ToDoItem)(sender as MenuItem).CommandParameter;
+                var result=await App.Context.DeleteItemAsync(item);
+                if (result==1)
+                {
+                    LoadItems();
+                }
+            }
+        }
     }
 }

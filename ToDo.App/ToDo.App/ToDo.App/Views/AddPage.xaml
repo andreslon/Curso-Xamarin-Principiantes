@@ -15,10 +15,6 @@
             <Entry x:Name="nombre"></Entry>
             <Label Text="Descripción" TextColor="#e74c3c" FontSize="Medium"></Label>
             <Editor x:Name="descripcion" HeightRequest="120"></Editor>
-            <Label Text="Fecha" TextColor="#e74c3c" FontSize="Medium"></Label>
-            <DatePicker x:Name="fecha"></DatePicker>
-            <Label Text="Hora" TextColor="#e74c3c" FontSize="Medium"></Label>
-            <TimePicker x:Name="hora"></TimePicker>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

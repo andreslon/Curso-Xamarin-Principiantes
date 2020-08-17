@@ -9,17 +9,17 @@ namespace ToDo.App.Data
 {
     public class DatabaseContext
     {
-        private readonly SQLiteAsyncConnection connection;
+        private readonly SQLiteAsyncConnection Connection;
 
         public DatabaseContext(string dbPath)
         {
-            connection = new SQLiteAsyncConnection(dbPath);
+            Connection = new SQLiteAsyncConnection(dbPath);
 
-            connection.CreateTableAsync<ToDoItem>().Wait();
+            Connection.CreateTableAsync<ToDoItem>().Wait();
         }
         public async Task<int> InsertItemAsync(ToDoItem item)
         {
-            return await connection.InsertAsync(item);
+            return await Connection.InsertAsync(item);
         }
         public async Task<List<ToDoItem>> GetItemsAsync()
         {

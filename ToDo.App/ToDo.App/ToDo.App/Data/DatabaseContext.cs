@@ -19,7 +19,7 @@ namespace ToDo.App.Data
         }
         public async Task<int> InsertItemAsync(ToDoItem item)
         {
-            return await connection.InsertAsync(item);
+            return await Connection.InsertAsync(item);
         }
 
     }

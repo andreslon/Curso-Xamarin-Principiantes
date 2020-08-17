@@ -23,7 +23,7 @@ namespace ToDo.App.Data
         }
         public async Task<List<ToDoItem>> GetItemsAsync()
         {
-            return await connection.Table<ToDoItem>().ToListAsync();
+            return await Connection.Table<ToDoItem>().ToListAsync();
         }
     }
 }
